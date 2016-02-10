@@ -33,7 +33,7 @@ func ElevSetMotorDirection(direction int) {
 	}
 }
 
-func ElevInit(){
+func ElevInit() {
     initCheck := IoInit()
     if (initCheck==0){
         fmt.Println("Unable to initialize elevator")
@@ -44,8 +44,7 @@ func ElevInit(){
             ElevSetButtonLight(button,floor,0)
         }
     }
- 
-       
+    
 }
 
 func ElevSetButtonLight(button int, floor int, value int) { //We want assert?
